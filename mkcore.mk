@@ -65,3 +65,12 @@ clean:
 		echo "Recreating $(INT_DIR)"; \
 		mkdir $(INT_DIR); \
 	fi
+clean_yes:
+		echo "Removing $(OUT_DIR)"; \
+		rm -f -r -d $(OUT_DIR); \
+		echo "Recreating $(OUT_DIR)"; \
+		mkdir $(OUT_DIR); \
+		echo "Removing $(INT_DIR)"; \
+		rm -f -r -d $(INT_DIR); \
+		echo "Recreating $(INT_DIR)"; \
+		mkdir $(INT_DIR); \

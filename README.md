@@ -48,4 +48,5 @@ A multi-platform multi-purpose makefile
 
 ## Defined rules
 **safeguard** - does nothing, there to prevent built-in rules from auto-triggering  
-**clean** - prompts confirmation, deletes OUT_DIR and INT_DIR and then recreates them
+**clean** - prompts confirmation, deletes OUT_DIR and INT_DIR and then recreates them  
+**clean_yes** - deletes OUT_DIR and INT_DIR and then recreates them
