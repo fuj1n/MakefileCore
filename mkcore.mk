@@ -23,8 +23,12 @@ ifeq ($(PIC), true)
 FPIC = -fpic
 endif
 # Compiler Specifications
-CC = g++
-CFLAGS = -Wall $(WERROR) $(FPIC) $(INC_DIRS) -c
+ifeq ($(GCC_EXEC),)
+  CC = g++
+else
+  CC = $(GCC_EXEC)
+endif
+CFLAGS = -Wall $(WERROR) $(FPIC) $(INC_DIRS) -std=$(GCC_STD) -c
 ifeq ($(OUT_TYPE), slib)
 LC = ar
 LFLAGS = rvs $(OUT_FILE)

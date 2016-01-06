@@ -15,7 +15,11 @@ A multi-platform multi-purpose makefile
 **LIBRARY_FILES** - The libraries to be linked  
 **LIBRARY_DIR** - A list of library folders (where the mentioned library files would be found)  
 **WERR** - Treat warnings as errors  
-**PIC** - Produce position independent code
+**PIC** - Produce position independent code  
+**GCC_STD** - Language version to pass to GCC
+
+### Compiler overrides  
+**GCC_EXEC** - If not commented out, overrides CC  
 
 ### Project settings calculations (defined in mkcore.mk)
 **OUT_FILE** - The output file including the path and extension  

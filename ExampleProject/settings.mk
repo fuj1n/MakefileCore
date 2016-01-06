@@ -17,3 +17,10 @@ LIBRARY_DIR = lib
 WERR = false
 # > Produce position independent code (true/false)
 PIC = false
+# > GCC -std argument
+GCC_STD=c++11
+
+# Project Overrides
+# > Use alternate GCC executable (other than G++ on the path)
+# > Commented out to use default
+#GCC_EXEC = /usr/bin/i686-pc-mingw32-g++.exe
