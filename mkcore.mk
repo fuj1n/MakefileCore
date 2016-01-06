@@ -33,7 +33,11 @@ ifeq ($(OUT_TYPE), slib)
 LC = ar
 LFLAGS = rvs $(OUT_FILE)
 else
-LC = g++
+ifeq ($(GCC_EXEC),)
+  LC = g++
+else
+  LC = $(GCC_EXEC)
+endif
 LFLAGS = $(LIB_DIRS) $(LIB_FILES) -o $(OUT_FILE)
 ifeq ($(OUT_TYPE), dlib)
 LFLAGS += -shared
