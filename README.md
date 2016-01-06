@@ -40,11 +40,13 @@ A multi-platform multi-purpose makefile
 **COMPILER** - shorthand to specify CC CFLAGS  
 **LINKER** - shorthand to specify LC LFLAGS
 
-### Operating system specific (defined in mkcore.mk)
+### Operating system specific (defined in os.mk)
 **SYS** - Operating system, either WIN32, LINUX or OSX  
 **EXT_EXEC** - Extension for executable files in current environment  
 **EXT_SLIB** - Extension for static libraries in current environment  
 **EXT_DLIB** - Extension for dynamic libraries in current environment  
+
+### Operating system specific to project (defined in out.mk)  
 **EXT_WIN32** - Extension for current project type in Windows  
 **EXT_LINUX** - Extension for current project type in Linux  
 **EXT_OSX** - Extension for current project type in OS X  

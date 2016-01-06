@@ -1,7 +1,8 @@
 .SILENT:
 
+include ../os.mk
 include settings.mk
-include ../util.mk
+include ../out.mk
 # Calculated Project Settings
 OUT_FILE = $(OUT_DIR)/$(OUT_NAME)$(EXT)
 INC_DIRS = $(subst $(SPACE), -I, $(INCLUDE_DIR))
